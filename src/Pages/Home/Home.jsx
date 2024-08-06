@@ -25,6 +25,7 @@ const Home = () => {
         })
             .then(res => res.json())
             .then(res => {
+                console.log(res)
                 setFilteredList((prevState) => res.fish)
             })
             .catch(err => console.error(err))
