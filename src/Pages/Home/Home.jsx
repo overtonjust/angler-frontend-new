@@ -20,13 +20,11 @@ const Home = () => {
 
 
     const filterByWatchlistId = (id) => {
-        console.log(filter, id)
         fetch(`${API}/watchlists/${id}`, {
             credentials: 'include'
         })
             .then(res => res.json())
             .then(res => {
-                console.log(res)
                 setFilteredList((prevState) => res.fish)
             })
             .catch(err => console.error(err))
