@@ -39,10 +39,7 @@ const Login = () => {
             body: JSON.stringify(login),
             credentials: 'include'
         })
-            .then(res => {
-                console.log(res)
-                res.ok ? navigate('/home') : res.json().then(res => alert(res.error))
-            })
+            .then(res => res.ok ? navigate('/home') : res.json().then(res => alert(res.error)))
             .catch(err => console.error(err))
     };
 
