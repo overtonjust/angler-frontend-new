@@ -20,6 +20,7 @@ const Home = () => {
 
 
     const filterByWatchlistId = (id) => {
+        console.log(filter, id)
         fetch(`${API}/watchlists/${id}`, {
             credentials: 'include'
         })
