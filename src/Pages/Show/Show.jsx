@@ -150,31 +150,43 @@ const Show = () => {
                         styles={{
                             control:(base) => ({
                                 ...base,
-                                border: '2px solid black',
+                                border: '2px solid #0f1c43ff', // dark-blue
                                 borderRadius: '1em',
+                                backgroundColor: '#694526',
                                 fontSize: '1em',
                                 boxShadow: 'none',
-                                cursor: 'pointer'
+                                cursor: 'pointer',
+                                ":hover": {
+                                    border: '2px solid #0f1c43ff',
+                                    boxShadow: '0 0 .4em .2em #f7af9dff',
+                                }
                             }),
                             menu: (base) => ({
                                 ...base,
-                                color: '#5b5b5b',
+                                color: '#f4ededff', // white
                                 fontSize: '1em',
-                                
+                                backgroundColor: '#694526',
+                                ":hover": {
+                                    border: '2px solid #0f1c43ff',
+                                }
                             }),
                             option: (base) => ({
                                 ...base,
-                                backgroundColor: '#fff',
-                                color: '#5b5b5b',
+                                backgroundColor: '#694526', // Brown
+                                color: '#f4ededff', // white
                                 cursor: 'pointer',
                                 ":hover": {
-                                    backgroundColor: 'rgba(0, 176, 255,.4);'
+                                    backgroundColor: '#694526' //Brown
                                 },
                             }),
                             placeholder: (base) => ({
                                 ...base,
-                                color: 'black'
-                            })               
+                                color: '#f4ededff'
+                            }),
+                            singleValue: (base) => ({
+                                ...base,
+                                color: '#f4ededff'
+                            })              
                         }}
                         /> 
                         <input className='showcard__submit' type="submit" value={'Add to watchlist'} />

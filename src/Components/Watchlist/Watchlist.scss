@@ -2,32 +2,56 @@
 
 .watchlist-form-name {
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid $dark-blue;
+    background-color: $light-blue;
     border-radius: .2em;
     padding: 2%;
     font-size: 1.2em;
 }
 
+.watchlist-form-name::placeholder {
+    color: $dark-blue;
+}
+
 .watchlist-form-textarea {
+    border: 2px solid $dark-blue;
+    background-color: $grey;
+    color: $dark-blue;
+    padding: .5%;
     border-radius: .2em;
     font-size: 1.2em;
     height: 80px;
     width: 300px;
 }
 
+.watchlist-form-textarea::placeholder {
+    color: $dark-blue;
+}
+
 .watchlist-new {
-    padding: 2%;
-    max-height: 80px;
+    padding: 8px;
+    max-height: 70px;
     align-self: center;
     width: 150px;
+    border: 2px solid $dark-blue;
     border-radius: 1.4em;
+    background-color: $brown;
+    box-shadow: -.2em .2em .4em $dark-blue;
+    color: $white;
     font-size: 1.2em;
     font-family: "Patrick Hand", cursive;
     cursor: pointer;
+    transition: .2s ease-in;
+}
+
+.watchlist-new:hover {
+    transform: translate(0, -5px);
+    box-shadow: 0 0 .4em .2em $pink;
 }
 
 .watchlist {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
     gap: 15px;
@@ -35,19 +59,24 @@
 
     &__name {
        text-decoration: underline;
+       color: $dark-blue;
     }
 
     &__textarea{
+        color: $grey;
+        opacity: .8;
         margin-left: 20px;
         font-size: 1.2em;
     }
 
     &__header {
+        max-width: 400px;
         display: flex;
         justify-content: space-between;
     }
 
     &__icons{
+        color: $grey;
         display: flex;
         align-items: center;
         gap: 20px;
@@ -61,6 +90,8 @@
     &__submit {
         outline: none;
         border: none;
+        background-color: $light-blue;
+        color: $grey;
         font-size: 1rem;
         cursor: pointer;
     }

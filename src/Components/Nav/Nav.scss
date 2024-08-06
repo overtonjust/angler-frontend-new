@@ -19,7 +19,7 @@
     }
 
     &__log {
-        font-family: .8em;
+        font-size: 1.2em;
         margin-right: 10px;
         cursor: pointer;
     }
@@ -27,4 +27,5 @@
 
 .nav-links {
     display: flex;
+    gap: 20px;
 }

@@ -1,7 +1,7 @@
 @import '../../Colors.scss';
 
 .home {
-    padding: 4% 2%;
+    padding: 2%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -14,9 +14,10 @@
     flex-wrap: wrap;
 
     &__button {
-        border: 1px solid black;
+        border: 2px solid $dark-blue;
         border-radius: .6em;
-        background-color: $dark-blue;
+        background-color: $brown;
+        box-shadow: -.2em .2em .4em $dark-blue;
         color: $white;
         padding: 1.5% 2%;
         display: flex;
@@ -25,6 +26,12 @@
         font-size: 1.2em;
         font-family: "Patrick Hand", cursive;
         cursor: pointer;
+        transition: .1s ease-in;
+    }
+
+    &__button:hover {
+        transform: translate(2px, -5px);
+        box-shadow: 0 0 .4em .2em $pink;
     }
 
         &__button-img {
@@ -42,23 +49,37 @@
     flex-direction: column;
     gap: 30px;
 
+        &__title {
+            font-size: 1.6em;
+            color: $dark-blue;
+        }
+
         &__fish-bucket {
             display: flex;
-            gap: 15px;
+            gap: 20px;
             flex-wrap: wrap;
         }
 
             &__fish{
                 display: flex;
-                border: 2px solid black;
+                background-color: $brown;
+                box-shadow: -.4em .4em .6em $dark-blue;
+                border: 2px solid $dark-blue;
                 padding: 12px;
                 border-radius: 1em;
                 justify-content: space-between;
                 height: 110px;
                 width: 190px;
                 text-decoration: none;
-                color: black;
+                color: $white;
                 cursor: pointer;
+                transition: .2s ease-in;
+            }
+
+            &__fish:hover {
+                transform: translate(2px, -5px);
+                box-shadow: 0 0 .6em .4em $pink;
+
             }
 
             &__rows {

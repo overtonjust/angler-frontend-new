@@ -96,7 +96,7 @@ const Watchlist = ({id, name, description, favorite, newList}) => {
                                     onChange={handleChange}
                                     className='watchlist-form-name '
                                     name='name'
-                                    placeholder='watchlist name'
+                                    placeholder='Watchlist name'
                                     value={watchlistData.name}
                                 />
                             </Form.Group>
@@ -112,7 +112,7 @@ const Watchlist = ({id, name, description, favorite, newList}) => {
                                 className='watchlist-form-textarea watchlist__textarea'
                                 onChange={handleChange}
                                 as='textarea'
-                                placeholder='description'
+                                placeholder='Description'
                                 value={watchlistData.description}
                             />
                         </Form.Group>
@@ -132,7 +132,7 @@ const Watchlist = ({id, name, description, favorite, newList}) => {
                             onChange={handleChange}
                             className='watchlist-form-name '
                             name='name'
-                            placeholder='watchlist name'
+                            placeholder='Watchlist name'
                             value={watchlistData.name}
                         />
                     </Form.Group>
@@ -149,7 +149,7 @@ const Watchlist = ({id, name, description, favorite, newList}) => {
                         className='watchlist-form-textarea watchlist__textarea'
                         onChange={handleChange}
                         as='textarea'
-                        placeholder='description'
+                        placeholder='Description'
                         value={watchlistData.description}
                     />
                 </Form.Group>
