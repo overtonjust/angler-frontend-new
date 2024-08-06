@@ -1,0 +1,30 @@
+.mobile-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__navs{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title{
+        font-size: 2.4em;
+        cursor: pointer;
+    }
+
+    &__subtext {
+        font-size: 1.2em;
+    }
+
+    &__log {
+        font-family: .8em;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+}
+
+.nav-links {
+    display: flex;
+}

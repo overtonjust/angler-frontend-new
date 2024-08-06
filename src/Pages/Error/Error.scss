@@ -1,0 +1,10 @@
+@import '../../Colors.scss';
+
+.catch {
+    height: 100vh;
+    width: 100vw;
+    padding: 2% 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}

@@ -1,0 +1,67 @@
+@import '../../Colors.scss';
+
+.watchlist-form-name {
+    border: none;
+    border-bottom: 2px solid black;
+    border-radius: .2em;
+    padding: 2%;
+    font-size: 1.2em;
+}
+
+.watchlist-form-textarea {
+    border-radius: .2em;
+    font-size: 1.2em;
+    height: 80px;
+    width: 300px;
+}
+
+.watchlist-new {
+    padding: 2%;
+    max-height: 80px;
+    align-self: center;
+    width: 150px;
+    border-radius: 1.4em;
+    font-size: 1.2em;
+    font-family: "Patrick Hand", cursive;
+    cursor: pointer;
+}
+
+.watchlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 40px;
+
+    &__name {
+       text-decoration: underline;
+    }
+
+    &__textarea{
+        margin-left: 20px;
+        font-size: 1.2em;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__icons{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__icon {
+        font-size: 1.4em;
+        cursor: pointer;
+    }
+
+    &__submit {
+        outline: none;
+        border: none;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,124 @@
+@import '../../Colors.scss';
+
+.home {
+    padding: 4% 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.filter-holder {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    &__button {
+        border: 1px solid black;
+        border-radius: .6em;
+        background-color: $dark-blue;
+        color: $white;
+        padding: 1.5% 2%;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 1.2em;
+        font-family: "Patrick Hand", cursive;
+        cursor: pointer;
+    }
+
+        &__button-img {
+            width: 30px;
+            height: 30px;
+        }
+
+        &__button-icon {
+            font-size: 30px;
+        }
+}
+
+.index {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+        &__fish-bucket {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+            &__fish{
+                display: flex;
+                border: 2px solid black;
+                padding: 12px;
+                border-radius: 1em;
+                justify-content: space-between;
+                height: 110px;
+                width: 190px;
+                text-decoration: none;
+                color: black;
+                cursor: pointer;
+            }
+
+            &__rows {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                gap: 4px;
+            }
+
+            &__image-holder {
+                display: flex;
+                justify-content: space-between;
+            }
+
+                &__image {
+                    height: 60px;
+                    width: 60px;
+                    object-fit: fill;
+                    
+                }
+                &__scrip {
+                    align-self: flex-start;
+                    height: 40px;
+                    width: 40px;
+                }
+
+                    &__name-holder {
+                        height: 20px;
+                        width: 100%;
+                        display: flex;
+                        gap: 4px;
+                    }
+                        &__name {
+                            max-width: 80px;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+
+                        &__name, &__text {
+                            font-size: .9em;
+                        }
+}
+
+
+.weather-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4px;
+    gap: 4px;
+
+    &__image {
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+    }
+}
+
+
+.nav-link {
+    text-decoration: none;
+    color: $dark-blue;
+}
