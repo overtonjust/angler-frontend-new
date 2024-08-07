@@ -25,6 +25,7 @@ Angler is an app for fishers of the game Final Fantasy 14(FFXIV) designed to hel
     - Giving desktop view its own unique look
 - Adding an accurate clock of current game time to reference on appropriate fish
 - Additional watchlist view beyond filtering on the main page
+- Custom popups for alerts and confirmations
 
 ## Dependencies
 
